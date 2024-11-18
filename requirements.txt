@@ -1,0 +1,6 @@
+Flask
+jupyterlab
+requests
+fastapi
+uvicorn
+typer

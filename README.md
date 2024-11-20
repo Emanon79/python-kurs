@@ -1,4 +1,5 @@
 Pythonkurs README:
+
 Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver.
 
 Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt. 

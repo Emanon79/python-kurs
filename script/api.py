@@ -4,11 +4,12 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/")
-async def read_joke():
+async def get_joke():
+    """Get a random joke from the icanhazdadjoke API."""
     headers = {'Accept': 'application/json'}
-    r = requests.get('https://icanhazdadjoke.com/', headers=headers)
-    d = r.json()
-    return(d["joke"])
+    response = requests.get('https://icanhazdadjoke.com/', headers=headers)
+    data = response.json()
+    return data["joke"]
 
 
 

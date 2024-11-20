@@ -1,5 +1,5 @@
- Pythonkurs README
-Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver. 
+Pythonkurs README:
+Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver.
 
 Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt. 
 
@@ -17,15 +17,15 @@ Nyttige script som blir brukt underveis i scriptet ligger i mappa script/
 Kurset kan klones med git hvis du har git installert 
 git clone git@github.com:Emanon79/python-kurs.git
 Eller lastes ned som zip
-https://codeload.github.com/Emanon79/python-kurs/zip/refs/heads/master
+https://github.com/Emanon79/python-kurs/archive/refs/heads/main.zip
 
 Start med å lese "01 - Introduksjon". Der står det også hva man skal starte med (litt mer detaljert), men for å komme i gang:
 
 Last ned Python 3.13 fra https://www.python.org/downloads/ 
-Har du allerede python i litt eldre versjon (3.12, 3.11,3.10,3.9) vil det også fungere fint. 
+Har du allerede python i litt eldre versjon (3.12, 3.11,3.10,3.9) vil det også fungere fint.
 
 På Linux:
-Python er som regel forhånds installert på Linux. En bestemt versjon av Python installeres slik 
+Python er som regel forhånds installert på Linux. En bestemt versjon av Python installeres slik
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update 
 sudo apt install python3.13

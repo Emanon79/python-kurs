@@ -7,3 +7,4 @@ typer
 cython
 numpy
 numba
+BeautifulSoup4

@@ -54,7 +54,8 @@ Hvis pip ikke funker (på Windows) bytt ut pip med "py -3 -m pip":
 - py -3 -m pip install -r requirements.txt
 
 Vi har tidligere brukt virtuelle miljøer i kurset (for å installere pakker osv.), men for å unngå å skape forvirring så går vi ikke gjennom dette.
-Dere kan helt fint bruke dette selv, hvis det er noe dere pleier.
+Dere kan helt fint bruke dette selv, hvis det er noe dere pleier. På linux kan man source bin/source\_venv.sh med en requirements-fil som argument
+for å få et venv med nødvendige pakker installert: 'source bin/source\_venv.sh requirements.txt'
 
 ##### Installer og kjør Jupyterlab
 Jupyter lab / notebook er et GUI i nettleseren man kan bruke for å kjøre Pythonkode mer interaktivt enn i et script.

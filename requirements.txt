@@ -4,3 +4,6 @@ requests
 fastapi
 uvicorn
 typer
+cython
+numpy
+numba

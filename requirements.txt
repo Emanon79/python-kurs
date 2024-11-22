@@ -8,3 +8,5 @@ cython
 numpy
 numba
 BeautifulSoup4
+pandas
+matplotlib

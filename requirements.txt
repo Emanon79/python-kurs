@@ -4,4 +4,6 @@ requests
 fastapi
 uvicorn
 typer
+pandas
+matplotlib
 BeautifulSoup4

@@ -4,6 +4,9 @@ requests
 fastapi
 uvicorn
 typer
+cython
+numpy
+numba
+BeautifulSoup4
 pandas
 matplotlib
-BeautifulSoup4

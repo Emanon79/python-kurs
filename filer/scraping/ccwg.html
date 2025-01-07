@@ -1,0 +1,808 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search IETF mail list archives">
+    <title>ccwg</title>
+
+    
+
+    <link rel="stylesheet" type="text/css" href="https://static.ietf.org/mailarchive/2.28.0/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://static.ietf.org/mailarchive/2.28.0/mlarchive/css/bootstrap_custom.css">
+    <link rel="stylesheet" type="text/css" href="https://static.ietf.org/mailarchive/2.28.0/mlarchive/css/styles.css">
+
+    
+
+    
+
+</head>
+
+<body>
+
+<!-- Container -->
+<div id="container">
+
+    <header class="navbar navbar-expand-md navbar-dark fixed-top px-3 py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="/">
+                <img alt="IETF Logo" src="https://static.ietf.org/mailarchive/2.28.0/mlarchive/images/ietflogo-small-transparent.png">
+                <span class="navbar-text d-none d-md-inline-block">
+                
+                Mail Archive
+                
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div id="navbar-main" class="navbar-header collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link" href="https://www.ietf.org/search/">Search www.ietf.org</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-inline">
+                        <a class="nav-link" href="https://datatracker.ietf.org">Search Datatracker</a>
+                    </li>
+		            <li class="nav-item d-none d-lg-inline navbar-text pipe"></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbar-help" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+                        <div class="dropdown-menu" aria-labelledby="navbar-help">
+                            <a class="dropdown-item" href="/arch/help/">Search Syntax</a>
+                            <a class="dropdown-item" href="/docs/api-reference/">API Reference</a>
+                        </div>
+                    </li>
+
+                    
+                    
+                    
+                    
+                    
+                    <li class="nav-item dropdown me-2">
+                        <a id="nav-settings-anchor" class="nav-link dropdown-toggle" href="#" id="navbar-settings" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbar-settings">
+                            <li><a id="toggle-static" class="dropdown-item" href="#">Turn Static Mode On</a></li>
+                        </ul>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item">
+                        
+                            <a class="nav-link" href="/oidc/authenticate/" rel="nofollow">Sign in</a>
+                        
+                    </li>
+                    
+                </ul>
+            </div> <!-- navbar-header -->
+            
+        </div> <!-- container-fluid -->
+    </header>
+
+            <!-- 
+            <noscript>
+                <p class="navbar-text"><small>Enable Javascript for full functionality.</small></p>
+            </noscript>
+            -->
+
+        <!-- Django Messages -->
+        
+
+
+    <!-- Content -->
+    <div id="content">
+        
+
+    <div id="msg-container">
+        <div id="sidebar">
+            <div id="search-filters">
+                
+                    <p class="text-center">Viewing List:<br><span class="browse-list-name"><b>ccwg</b></span></p>
+                    <hr>
+                
+                <h5 class="mt-4">FILTER BY TIME</h5>
+                <ul class="filter-options" tabindex="-1">
+                  <li class="filter-item"><a class="selected" href="?">Anytime</a></li>
+                  <li class="filter-item"><a class="None" href="?qdr=d">Past day</a></li>
+                  <li class="filter-item"><a class="None" href="?qdr=w">Past week</a></li>
+                  <li class="filter-item"><a class="None" href="?qdr=m">Past month</a></li>
+                  <li class="filter-item"><a class="None" href="?qdr=y">Past year</a></li>
+                </ul>
+                <div id="filter-box" class="js-off">
+                    
+
+                    <h5 class="mt-4">FILTER BY FROM</h5>
+                    <div id="from-filter" class="filter" tabindex="-1">
+                        <form id="from-filter-form">
+                        <ul class="filter-options" tabindex="-1">
+                         
+                        </ul>
+                        </form>
+                    </div> <!-- from-filter -->
+                </div> <!-- filter-box -->
+            </div> <!-- search-filters -->
+            
+            <div id="message">
+              
+            </div>
+            
+            
+  <div class="footer">
+      <p class="small text-center">v2.28.0 | <a href="https://github.com/ietf-tools/mailarch/issues">Report a Bug</a> | <a href="mailto:tools-help@ietf.org">By Email</a> | <a href="https://status.ietf.org">System Status</a></p>
+  </div>
+
+
+        </div> <!-- sidebar -->
+
+        <div id="msg-components">
+        
+            <nav id="toolbar-left" class="navbar navbar-light bg-light rounded shadow-sm float-start toolbar">
+              <ul class="navbar-nav me-auto">
+                <li id="toggle-filters" class="nav-item">
+                  <a href="#" class="nav-link"><i class="fa fa-chevron-left toggle-pane" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav id="toolbar" class="navbar navbar-expand-md navbar-light bg-light rounded shadow-sm toolbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-stretch" id="myNavbar">
+                        <ul class="navbar-nav mx-2 flex-shrink-0">
+                            
+                            <!-- <li><a id="clear-sort" href="#">Clear Sort</a></li> -->
+                            
+                                <li class="nav-item"><a class="nav-link active" href="/arch/browse/ccwg/?">Date</a></li>
+                                <li class="nav-item"><a id="gbt-link" class="nav-link" href="/arch/browse/ccwg/?gbt=1">Thread</a></li>
+                            
+                        </ul>
+                        
+                        <form name="search-form" id="id_search_form" class="ms-3 my-auto flex-grow-1" method="get">
+                            <div class="input-group input-group-sm w-100">
+                                
+                                    <input type="search" name="q" spellcheck="false" placeholder="Search ccwg" class="form-control" id="id_q">
+                                
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="submit">
+                                        <span class="fa fa-search" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#export-modal">Export</a></li>
+                        </ul> <!-- nav navbar-nav -->
+
+                    </div> <!-- myNavbar -->
+                </div> <!-- container-fluid -->
+            </nav> <!-- toolbar -->
+    
+            
+            <div id="msg-panes">
+                <div id="list-pane">
+                    
+                    
+                        <div class="header sortable">
+                            <a id="sort-button-subject" class="unsorted sortbutton" href="#">Subject<i class="fa fa-sort" aria-hidden="true"></i></a>
+                        </div><div class="header sortable">
+                            <a id="sort-button-frm" class="unsorted sortbutton" href="#">From<i class="fa fa-sort" aria-hidden="true"></i></a>
+                        </div><div class="header sortable">
+                            <a id="sort-button-date" class="unsorted sortbutton" href="#">Date<i class="fa fa-sort" aria-hidden="true"></i></a>
+                        </div><div class="header sortable d-none">
+                            <a id="sort-button-email_list" class="unsorted sortbutton" href="#">List<i class="fa fa-sort" aria-hidden="true"></i></a>
+                        </div>
+                    
+
+                    <div id="msg-list" class="msg-list wrapper no-preview" tabindex="-1" data-results-per-page="" data-queryid="" data-queryset-offset="0" data-selected-offset="None" data-export-token="eNuCCjidWKKH7THE" data-browse-list="ccwg" data-gbt="" data-static-off-url="/arch/browse/ccwg/" data-static-on-url="/arch/browse/static/ccwg/">
+                        <div class="table msg-table xtable">
+                            <div class="xtbody">
+                                
+                                    
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</span><a class="msg-detail" href="/arch/msg/ccwg/eRkUSJrPNSutFfcq3bSRpBfwnWI/">[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</a>
+        </div>
+        <div class="xtd from-col">Repository Activity Summary Bot</div>
+        <div class="xtd date-col">2024-12-15</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/eRkUSJrPNSutFfcq3bSRpBfwnWI/</div>
+        <div class="xtd id-col d-none">3540715</div>
+        <div class="xtd thread-col d-none">2165870</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Mind the Misleading Effects of LEO Mobility on End-to-End Congestion Contro</span><a class="msg-detail" href="/arch/msg/ccwg/-c2vSwDO2riL4C2HqUlnAEqX2bg/">[CCWG] Re: Mind the Misleading Effects of LEO Mobility on End-to-End Congestion Contro</a>
+        </div>
+        <div class="xtd from-col">lzl24@mails.tsinghua.edu.cn</div>
+        <div class="xtd date-col">2024-11-18</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/-c2vSwDO2riL4C2HqUlnAEqX2bg/</div>
+        <div class="xtd id-col d-none">3530565</div>
+        <div class="xtd thread-col d-none">2162128</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Mind the Misleading Effects of LEO Mobility on End-to-End Congestion Contro</span><a class="msg-detail" href="/arch/msg/ccwg/Jf0xAZgZ0C9z_dYEPVhtUmIrjd0/">[CCWG] Mind the Misleading Effects of LEO Mobility on End-to-End Congestion Contro</a>
+        </div>
+        <div class="xtd from-col">Hesham ElBakoury</div>
+        <div class="xtd date-col">2024-11-18</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/Jf0xAZgZ0C9z_dYEPVhtUmIrjd0/</div>
+        <div class="xtd id-col d-none">3530550</div>
+        <div class="xtd thread-col d-none">2162128</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</span><a class="msg-detail" href="/arch/msg/ccwg/25sVxBgcAKpQCIby0g1wTh-XMiY/">[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</a>
+        </div>
+        <div class="xtd from-col">Repository Activity Summary Bot</div>
+        <div class="xtd date-col">2024-11-10</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/25sVxBgcAKpQCIby0g1wTh-XMiY/</div>
+        <div class="xtd id-col d-none">3527542</div>
+        <div class="xtd thread-col d-none">2161012</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Confirming consensus on GitHub usage</span><a class="msg-detail" href="/arch/msg/ccwg/1qDefiRnUr5Z8Ng2uDhJNHLD_dY/">[CCWG] Re: Confirming consensus on GitHub usage</a>
+        </div>
+        <div class="xtd from-col">Mohit P. Tahiliani</div>
+        <div class="xtd date-col">2024-11-07</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/1qDefiRnUr5Z8Ng2uDhJNHLD_dY/</div>
+        <div class="xtd id-col d-none">3526369</div>
+        <div class="xtd thread-col d-none">2160182</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-2">
+            <span>[CCWG] Re: Confirming consensus on GitHub usage</span><a class="msg-detail" href="/arch/msg/ccwg/C9PBSDv3GDVJx9irvh5N5ybOkOY/">[CCWG] Re: Confirming consensus on GitHub usage</a>
+        </div>
+        <div class="xtd from-col">Lars Eggert</div>
+        <div class="xtd date-col">2024-11-07</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/C9PBSDv3GDVJx9irvh5N5ybOkOY/</div>
+        <div class="xtd id-col d-none">3526300</div>
+        <div class="xtd thread-col d-none">2160182</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Confirming consensus on GitHub usage</span><a class="msg-detail" href="/arch/msg/ccwg/KIAeEXjQxwdMIHcWUstUyn_WpW0/">[CCWG] Re: Confirming consensus on GitHub usage</a>
+        </div>
+        <div class="xtd from-col">Neal Cardwell</div>
+        <div class="xtd date-col">2024-11-05</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/KIAeEXjQxwdMIHcWUstUyn_WpW0/</div>
+        <div class="xtd id-col d-none">3525463</div>
+        <div class="xtd thread-col d-none">2160182</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Confirming consensus on GitHub usage</span><a class="msg-detail" href="/arch/msg/ccwg/sLpYxwVQX4fo4f51JDnQ3L-VXAg/">[CCWG] Confirming consensus on GitHub usage</a>
+        </div>
+        <div class="xtd from-col">Eric Kinnear</div>
+        <div class="xtd date-col">2024-11-05</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/sLpYxwVQX4fo4f51JDnQ3L-VXAg/</div>
+        <div class="xtd id-col d-none">3525259</div>
+        <div class="xtd thread-col d-none">2160182</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Draft minutes for CCWG at IETF 121 are now available</span><a class="msg-detail" href="/arch/msg/ccwg/EJUeqEzXBOMKCU8Qj0Yp8zNjO1k/">[CCWG] Draft minutes for CCWG at IETF 121 are now available</a>
+        </div>
+        <div class="xtd from-col">Eric Kinnear</div>
+        <div class="xtd date-col">2024-11-05</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/EJUeqEzXBOMKCU8Qj0Yp8zNjO1k/</div>
+        <div class="xtd id-col d-none">3525249</div>
+        <div class="xtd thread-col d-none">2160179</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] draft-ietf-ccwg-bbr and ECN</span><a class="msg-detail" href="/arch/msg/ccwg/ZBgP-uI6zIfQR-E5cAmFZTdtTmk/">[CCWG] draft-ietf-ccwg-bbr and ECN</a>
+        </div>
+        <div class="xtd from-col">Neal Cardwell</div>
+        <div class="xtd date-col">2024-11-05</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/ZBgP-uI6zIfQR-E5cAmFZTdtTmk/</div>
+        <div class="xtd id-col d-none">3525136</div>
+        <div class="xtd thread-col d-none">2158109</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Formal verification of congestion control</span><a class="msg-detail" href="/arch/msg/ccwg/iEIJYEX-pvnUrChfYM4PIUVV1U0/">[CCWG] Formal verification of congestion control</a>
+        </div>
+        <div class="xtd from-col">Gergely Buday</div>
+        <div class="xtd date-col">2024-11-04</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/iEIJYEX-pvnUrChfYM4PIUVV1U0/</div>
+        <div class="xtd id-col d-none">3524549</div>
+        <div class="xtd thread-col d-none">2159931</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</span><a class="msg-detail" href="/arch/msg/ccwg/yEExP5Z_sfstjN8KIKLSSiYIu48/">[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</a>
+        </div>
+        <div class="xtd from-col">Repository Activity Summary Bot</div>
+        <div class="xtd date-col">2024-11-03</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/yEExP5Z_sfstjN8KIKLSSiYIu48/</div>
+        <div class="xtd id-col d-none">3523785</div>
+        <div class="xtd thread-col d-none">2159546</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-4">
+            <span>[CCWG] Re: SCReAM v2 test</span><a class="msg-detail" href="/arch/msg/ccwg/WzAsxncjwghY01sMUIV3PhbzGv4/">[CCWG] Re: SCReAM v2 test</a>
+        </div>
+        <div class="xtd from-col">Ingemar Johansson S</div>
+        <div class="xtd date-col">2024-10-29</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/WzAsxncjwghY01sMUIV3PhbzGv4/</div>
+        <div class="xtd id-col d-none">3521901</div>
+        <div class="xtd thread-col d-none">2158827</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-3">
+            <span>[CCWG] Re: SCReAM v2 test</span><a class="msg-detail" href="/arch/msg/ccwg/bCuRWg6Oz--xC3CCi71BvP8kGXc/">[CCWG] Re: SCReAM v2 test</a>
+        </div>
+        <div class="xtd from-col">Dave Taht</div>
+        <div class="xtd date-col">2024-10-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/bCuRWg6Oz--xC3CCi71BvP8kGXc/</div>
+        <div class="xtd id-col d-none">3521705</div>
+        <div class="xtd thread-col d-none">2158827</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-2">
+            <span>[CCWG] Re: SCReAM v2 test</span><a class="msg-detail" href="/arch/msg/ccwg/05d3MbnyE8KsGZHY5tC9SBCR8S0/">[CCWG] Re: SCReAM v2 test</a>
+        </div>
+        <div class="xtd from-col">Ingemar Johansson S</div>
+        <div class="xtd date-col">2024-10-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/05d3MbnyE8KsGZHY5tC9SBCR8S0/</div>
+        <div class="xtd id-col d-none">3521680</div>
+        <div class="xtd thread-col d-none">2158827</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: SCReAM v2 test</span><a class="msg-detail" href="/arch/msg/ccwg/7RXqkkELGg9QgsyhIwERgLh4LIg/">[CCWG] Re: SCReAM v2 test</a>
+        </div>
+        <div class="xtd from-col">Dave Taht</div>
+        <div class="xtd date-col">2024-10-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/7RXqkkELGg9QgsyhIwERgLh4LIg/</div>
+        <div class="xtd id-col d-none">3521674</div>
+        <div class="xtd thread-col d-none">2158827</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] SCReAM v2 test</span><a class="msg-detail" href="/arch/msg/ccwg/of9K_OUbI8CUrLya4iqaO2DXwzI/">[CCWG] SCReAM v2 test</a>
+        </div>
+        <div class="xtd from-col">Ingemar Johansson S</div>
+        <div class="xtd date-col">2024-10-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/of9K_OUbI8CUrLya4iqaO2DXwzI/</div>
+        <div class="xtd id-col d-none">3521646</div>
+        <div class="xtd thread-col d-none">2158827</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</span><a class="msg-detail" href="/arch/msg/ccwg/XFhftiMvXlPc3Qc9zdJ11x-Lbbg/">[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</a>
+        </div>
+        <div class="xtd from-col">Repository Activity Summary Bot</div>
+        <div class="xtd date-col">2024-10-27</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/XFhftiMvXlPc3Qc9zdJ11x-Lbbg/</div>
+        <div class="xtd id-col d-none">3521368</div>
+        <div class="xtd thread-col d-none">2158730</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Analysis for congestion control algorithms in LEO satellite networks</span><a class="msg-detail" href="/arch/msg/ccwg/sELxQPLooV3Gb4ZVmxBAvLs0o_s/">[CCWG] Analysis for congestion control algorithms in LEO satellite networks</a>
+        </div>
+        <div class="xtd from-col">zeqilai@tsinghua.edu.cn</div>
+        <div class="xtd date-col">2024-10-23</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/sELxQPLooV3Gb4ZVmxBAvLs0o_s/</div>
+        <div class="xtd id-col d-none">3520068</div>
+        <div class="xtd thread-col d-none">2158344</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] I-D Action: draft-ietf-ccwg-bbr-01.txt</span><a class="msg-detail" href="/arch/msg/ccwg/UioJO076h-5qQf6blszVyWDp4us/">[CCWG] I-D Action: draft-ietf-ccwg-bbr-01.txt</a>
+        </div>
+        <div class="xtd from-col">internet-drafts</div>
+        <div class="xtd date-col">2024-10-21</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/UioJO076h-5qQf6blszVyWDp4us/</div>
+        <div class="xtd id-col d-none">3519321</div>
+        <div class="xtd thread-col d-none">2158109</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Fwd: New Version Notification for draft-welzl-ccwg-ratelimited-increase-03.txt</span><a class="msg-detail" href="/arch/msg/ccwg/QyYCKZ4KdS45okM6R-4lJBJ_ilE/">[CCWG] Fwd: New Version Notification for draft-welzl-ccwg-ratelimited-increase-03.txt</a>
+        </div>
+        <div class="xtd from-col">Michael Welzl</div>
+        <div class="xtd date-col">2024-10-21</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/QyYCKZ4KdS45okM6R-4lJBJ_ilE/</div>
+        <div class="xtd id-col d-none">3518734</div>
+        <div class="xtd thread-col d-none">2157744</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-2">
+            <span>[CCWG] Re: comments on draft-welzl-ccwg-ratelimited-increase-02.txt</span><a class="msg-detail" href="/arch/msg/ccwg/5cdT0s_-kwvS4wCFaR1L506E94M/">[CCWG] Re: comments on draft-welzl-ccwg-ratelimited-increase-02.txt</a>
+        </div>
+        <div class="xtd from-col">Michael Welzl</div>
+        <div class="xtd date-col">2024-10-21</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/5cdT0s_-kwvS4wCFaR1L506E94M/</div>
+        <div class="xtd id-col d-none">3518694</div>
+        <div class="xtd thread-col d-none">2134931</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] comments on draft-welzl-ccwg-ratelimited-increase-02.txt</span><a class="msg-detail" href="/arch/msg/ccwg/Jih9VJwkmcqmO4KmrZI0RirGOaU/">[CCWG] comments on draft-welzl-ccwg-ratelimited-increase-02.txt</a>
+        </div>
+        <div class="xtd from-col">Neal Cardwell</div>
+        <div class="xtd date-col">2024-10-21</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/Jih9VJwkmcqmO4KmrZI0RirGOaU/</div>
+        <div class="xtd id-col d-none">3518674</div>
+        <div class="xtd thread-col d-none">2134931</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] New draft draft-johansson-ccwg-rfc8298bis-screamv2-02</span><a class="msg-detail" href="/arch/msg/ccwg/Pe4ll9QrbcqYBxuA_X22L4BtOfg/">[CCWG] New draft draft-johansson-ccwg-rfc8298bis-screamv2-02</a>
+        </div>
+        <div class="xtd from-col">Ingemar Johansson S</div>
+        <div class="xtd date-col">2024-10-21</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/Pe4ll9QrbcqYBxuA_X22L4BtOfg/</div>
+        <div class="xtd id-col d-none">3518521</div>
+        <div class="xtd thread-col d-none">2157615</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</span><a class="msg-detail" href="/arch/msg/ccwg/e3diV9EVNr7kmAKBdD4ohS7PZaI/">[CCWG] Weekly github digest (CCWG GitHub Activity Summary)</a>
+        </div>
+        <div class="xtd from-col">Repository Activity Summary Bot</div>
+        <div class="xtd date-col">2024-10-20</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/e3diV9EVNr7kmAKBdD4ohS7PZaI/</div>
+        <div class="xtd id-col d-none">3517997</div>
+        <div class="xtd thread-col d-none">2157275</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Updating the CCWG charter</span><a class="msg-detail" href="/arch/msg/ccwg/ZMoHiad37vmrIpUMMt2Ta8uDLus/">[CCWG] Re: Updating the CCWG charter</a>
+        </div>
+        <div class="xtd from-col">Neal Cardwell</div>
+        <div class="xtd date-col">2024-10-18</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/ZMoHiad37vmrIpUMMt2Ta8uDLus/</div>
+        <div class="xtd id-col d-none">3517527</div>
+        <div class="xtd thread-col d-none">2156981</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Updating the CCWG charter</span><a class="msg-detail" href="/arch/msg/ccwg/_asQ05cLU-swvYyVvCDCTxfgz9o/">[CCWG] Updating the CCWG charter</a>
+        </div>
+        <div class="xtd from-col">Eric Kinnear</div>
+        <div class="xtd date-col">2024-10-18</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/_asQ05cLU-swvYyVvCDCTxfgz9o/</div>
+        <div class="xtd id-col d-none">3517474</div>
+        <div class="xtd thread-col d-none">2156981</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] IETF 121 WIT Area Report for CCWG</span><a class="msg-detail" href="/arch/msg/ccwg/nFvTg5bewdRwMI5xE_0v90xq2Gw/">[CCWG] IETF 121 WIT Area Report for CCWG</a>
+        </div>
+        <div class="xtd from-col">Reese Enghardt</div>
+        <div class="xtd date-col">2024-10-18</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/nFvTg5bewdRwMI5xE_0v90xq2Gw/</div>
+        <div class="xtd id-col d-none">3517456</div>
+        <div class="xtd thread-col d-none">2156968</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] I-D Action: draft-ietf-ccwg-bbr-00.txt</span><a class="msg-detail" href="/arch/msg/ccwg/DsGoNnGWmhSg_t9A-j_5ER06jJc/">[CCWG] I-D Action: draft-ietf-ccwg-bbr-00.txt</a>
+        </div>
+        <div class="xtd from-col">internet-drafts</div>
+        <div class="xtd date-col">2024-10-17</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/DsGoNnGWmhSg_t9A-j_5ER06jJc/</div>
+        <div class="xtd id-col d-none">3516743</div>
+        <div class="xtd thread-col d-none">2156675</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</span><a class="msg-detail" href="/arch/msg/ccwg/2TgzTvKmjyjF4KZ5LpTxp7mIqtU/">[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</a>
+        </div>
+        <div class="xtd from-col">Eric Kinnear</div>
+        <div class="xtd date-col">2024-10-16</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/2TgzTvKmjyjF4KZ5LpTxp7mIqtU/</div>
+        <div class="xtd id-col d-none">3515924</div>
+        <div class="xtd thread-col d-none">2152130</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] ccwg - Requested session has been scheduled for IETF 121</span><a class="msg-detail" href="/arch/msg/ccwg/GX8d4sgK_B_EMj_Nhzi-5GK0az8/">[CCWG] ccwg - Requested session has been scheduled for IETF 121</a>
+        </div>
+        <div class="xtd from-col">&quot;IETF Secretariat&quot;</div>
+        <div class="xtd date-col">2024-10-11</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/GX8d4sgK_B_EMj_Nhzi-5GK0az8/</div>
+        <div class="xtd id-col d-none">3514352</div>
+        <div class="xtd thread-col d-none">2155638</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] CCWG at IETF 121 - Call for agenda items</span><a class="msg-detail" href="/arch/msg/ccwg/cv7mx72rHztgDmc7U7GqdlwsAgQ/">[CCWG] CCWG at IETF 121 - Call for agenda items</a>
+        </div>
+        <div class="xtd from-col">Reese Enghardt</div>
+        <div class="xtd date-col">2024-10-10</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/cv7mx72rHztgDmc7U7GqdlwsAgQ/</div>
+        <div class="xtd id-col d-none">3513655</div>
+        <div class="xtd thread-col d-none">2155330</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Call for participation: IETF 121 Hackathon table on Congestion Control Testing</span><a class="msg-detail" href="/arch/msg/ccwg/18kGZsdylHH05aQ5vG4YqPeytvI/">[CCWG] Re: Call for participation: IETF 121 Hackathon table on Congestion Control Testing</a>
+        </div>
+        <div class="xtd from-col">Emilia Ndilokelwa Weyulu</div>
+        <div class="xtd date-col">2024-09-30</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/18kGZsdylHH05aQ5vG4YqPeytvI/</div>
+        <div class="xtd id-col d-none">3509716</div>
+        <div class="xtd thread-col d-none">2153509</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] comments on draft-chung-ccwg-search-02</span><a class="msg-detail" href="/arch/msg/ccwg/rF8T0Df9wC-AcA2-ERI4b5qFrmQ/">[CCWG] comments on draft-chung-ccwg-search-02</a>
+        </div>
+        <div class="xtd from-col">Yoshifumi Nishida</div>
+        <div class="xtd date-col">2024-09-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/rF8T0Df9wC-AcA2-ERI4b5qFrmQ/</div>
+        <div class="xtd id-col d-none">3509327</div>
+        <div class="xtd thread-col d-none">2153544</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: [iccrg] Call for participation: IETF 121 Hackathon table on Congestion Control Testing</span><a class="msg-detail" href="/arch/msg/ccwg/cFPNPex-2LSM5Fnjda-xswUL7GU/">[CCWG] Re: [iccrg] Call for participation: IETF 121 Hackathon table on Congestion Control Testing</a>
+        </div>
+        <div class="xtd from-col">Jens Finkhaeuser</div>
+        <div class="xtd date-col">2024-09-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/cFPNPex-2LSM5Fnjda-xswUL7GU/</div>
+        <div class="xtd id-col d-none">3509314</div>
+        <div class="xtd thread-col d-none">2153509</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-1">
+            <span>[CCWG] Re: Call for participation: IETF 121 Hackathon table on Congestion Control Testing</span><a class="msg-detail" href="/arch/msg/ccwg/OFt5V2gFzDYn5iRPJnbjJ1SSthQ/">[CCWG] Re: Call for participation: IETF 121 Hackathon table on Congestion Control Testing</a>
+        </div>
+        <div class="xtd from-col">Robert McMahon</div>
+        <div class="xtd date-col">2024-09-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/OFt5V2gFzDYn5iRPJnbjJ1SSthQ/</div>
+        <div class="xtd id-col d-none">3509297</div>
+        <div class="xtd thread-col d-none">2153509</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-3">
+            <span>[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</span><a class="msg-detail" href="/arch/msg/ccwg/vdJ-Jygp-m7jO7PxD5lcv7PLt_M/">[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</a>
+        </div>
+        <div class="xtd from-col">Neal Cardwell</div>
+        <div class="xtd date-col">2024-09-28</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/vdJ-Jygp-m7jO7PxD5lcv7PLt_M/</div>
+        <div class="xtd id-col d-none">3509292</div>
+        <div class="xtd thread-col d-none">2152130</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] Call for participation: IETF 121 Hackathon table on Congestion Control Testing</span><a class="msg-detail" href="/arch/msg/ccwg/g5hFgiBA6pusgEVCqjrHSMYkT04/">[CCWG] Call for participation: IETF 121 Hackathon table on Congestion Control Testing</a>
+        </div>
+        <div class="xtd from-col">Reese Enghardt</div>
+        <div class="xtd date-col">2024-09-27</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/g5hFgiBA6pusgEVCqjrHSMYkT04/</div>
+        <div class="xtd id-col d-none">3509245</div>
+        <div class="xtd thread-col d-none">2153509</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-2">
+            <span>[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</span><a class="msg-detail" href="/arch/msg/ccwg/H8ETVALGjeRlbwZpSrYDQCY39lA/">[CCWG] Re: Adoption call for draft-cardwell-ccwg-bbr</a>
+        </div>
+        <div class="xtd from-col">Lars Eggert</div>
+        <div class="xtd date-col">2024-09-25</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/H8ETVALGjeRlbwZpSrYDQCY39lA/</div>
+        <div class="xtd id-col d-none">3508357</div>
+        <div class="xtd thread-col d-none">2152130</div>
+    </div>
+
+    <div class="xtr">
+        <div class="xtd subj-col depth-0">
+            <span>[CCWG] FW: New Version Notification for draft-johansson-ccwg-rfc8298bis-screamv2-01.txt</span><a class="msg-detail" href="/arch/msg/ccwg/CNqDqd-nHVdUFFypeVgUmb3KhlU/">[CCWG] FW: New Version Notification for draft-johansson-ccwg-rfc8298bis-screamv2-01.txt</a>
+        </div>
+        <div class="xtd from-col">Ingemar Johansson S</div>
+        <div class="xtd date-col">2024-09-23</div>
+        <div class="xtd list-col d-none">ccwg</div>
+        <div class="xtd score-col d-none"></div>
+        <div class="xtd url-col d-none">/arch/msg/ccwg/CNqDqd-nHVdUFFypeVgUmb3KhlU/</div>
+        <div class="xtd id-col d-none">3507554</div>
+        <div class="xtd thread-col d-none">2152890</div>
+    </div>
+
+                                
+                            </div>
+                        </div> <!-- msg-table -->
+                    </div> <!-- msg-list -->
+
+                    <div id="msg-list-controls">
+                        <div id="message-count" class="list-control">358 Messages</div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="list-control page-nav">
+                            
+                            <span class="current-page">Page 1 of 9</span>
+                            <a class="float-end" href="/arch/browse/ccwg/?page=2">Next</a>
+                        </div>
+                        <div id="toggle-preview"><a href="#"><i class="fa fa-chevron-down toggle-pane" aria-hidden="true"></i></a></div>
+                    </div> <!-- msg-list-controls -->
+                </div> <!-- list-pane -->
+                
+                <div id="splitter-pane" class="draggable js-off"></div>
+                
+                <div class="view-pane js-off"></div>
+            </div> <!-- msg-panes -->
+        </div> <!-- msg-components -->
+        <!-- debug_toolbar_here -->
+    </div> <!-- msg-container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="export-modal" tabindex="-1" role="dialog" aria-labelledby="export-modal-title" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="export-modal-title">Archive Export</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="export-text">
+              
+                <p>You must be logged in to export messages.</p>
+              
+            </div>
+            <div class="export-spinner">
+              <i class="fa fa-spinner fa-spin fa-3x"></i>
+            </div>
+          </div> <!-- modal-body -->
+          <div class="modal-footer">
+              <a class="btn btn-secondary export-link disabled" href="/arch/export/mbox/?email_list=ccwg&amp;token=eNuCCjidWKKH7THE">Mbox</a>
+              <a class="btn btn-secondary export-link disabled" href="/arch/export/maildir/?email_list=ccwg&amp;token=eNuCCjidWKKH7THE">Maildir</a>
+              <a class="btn btn-secondary export-link disabled" href="/arch/export/url/?email_list=ccwg&amp;token=eNuCCjidWKKH7THE">URLs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <!-- END Content -->
+
+
+    
+
+</div> <!-- END Container -->
+
+
+
+<script src="https://static.ietf.org/mailarchive/2.28.0/jquery/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://static.ietf.org/mailarchive/2.28.0/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://static.ietf.org/mailarchive/2.28.0/jquery.cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://static.ietf.org/mailarchive/2.28.0/mlarchive/js/base.js"></script>
+
+<script type="text/javascript" src="https://static.ietf.org/mailarchive/2.28.0/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://static.ietf.org/mailarchive/2.28.0/jquery.query/jquery.query.js"></script>
+<script type="text/javascript" src="https://static.ietf.org/mailarchive/2.28.0/mlarchive/js/mailarch.js"></script>
+
+
+<!-- debug_toolbar_here -->
+</body>
+</html>

@@ -1,6 +1,7 @@
 Pythonkurs README:
 
-Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver.
+Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver. For å løse ekstra oppgavene vil man ofte måtte søke informasjon selv på internett. 
+Vi har ikke løsningsforslag for ekstra oppgavene.
 
 Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt. 
 
@@ -26,18 +27,18 @@ Last ned Python 3.13 fra https://www.python.org/downloads/
 Har du allerede python i litt eldre versjon (3.12, 3.11,3.10,3.9) vil det også fungere fint.
 
 På Linux:
-Python er som regel forhånds installert på Linux. En bestemt versjon av Python installeres slik
-sudo add-apt-repository ppa:deadsnakes/ppa
+Python er som regel forhånds installert på Linux. Det kan også installeres med pakkemanageren "sudo apt install python3 python3-pip". Da får du som regel en litt eldre versjon, feks. 3.12,3.11,3.10 eller 3.9, men disse kan også brukes fint)
+
+En bestemt versjon av Python installeres slik:
+```sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update 
 sudo apt install python3.13
+```
 
-Python kan også installeres med pakkemanageren "sudo apt install python3 python3-pip". Da får du som regel en litt eldre versjon, feks. 3.12,3.11,3.10 eller 3.9, men disse kan også brukes fint)
 
 På Windows:
-- Åpne CMD og skriv "python --version". Verifiser at den sier "Python 3.13.x .. " etc. Dette vil kun fungere hvis python er lagt til i Windows sin miljøvariabel %PATH%
-- Hvis dette ikke fungerer kan Py launcher brukes: "py --version" eller "py -3 --version" (for å spesifisere versjon). Py launcher er den foretrukkede måten å kjøre python på i Windows. 
-(Siden man slipper å bli forvirret hvis man har flere pythonversjoner i flere mapper som alle ligger i PATH. Da kan man fort kjøre en annen versjon av python enn det 
-man trodde man startet)
+- Åpne cmd og kjør: "py --version" Verifiser at den sier "Python 3.13.x" Py launcher er den foretrukkede måten å kjøre python på i Windows. 
+- Legger man inn python i Windows in miljøvariabel %PATH% vil "python --version" fungere. 
 - Hver gang man ser "python" i presentasjonene og oppgavene kan dette byttes ut med "py" eller "py -3" på Windows for å bruke py launcher istedenfor.
 
 På Linux:
@@ -51,7 +52,7 @@ evt:
   - pip install Flask jupyterlab requests fastapi uvicorn typer
 
 Hvis pip ikke funker (på Windows) bytt ut pip med "py -3 -m pip":
-- py -3 -m pip install -r requirements.txt
+- py -m pip install -r requirements.txt
 
 Vi har tidligere brukt virtuelle miljøer i kurset (for å installere pakker osv.), men for å unngå å skape forvirring så går vi ikke gjennom dette.
 Dere kan helt fint bruke dette selv, hvis det er noe dere pleier. På linux kan man source bin/source\_venv.sh med en requirements-fil som argument
@@ -73,8 +74,8 @@ python3 -m jupyter lab
 ```
 evt. med py launcher for Windows:
 ```bash
-py -3 -m jupyter serverextension enable --py jupyterlab --sys-prefix
-py -3 -m jupyter lab
+py -m jupyter serverextension enable --py jupyterlab --sys-prefix
+py -m jupyter lab
 ```
 
 Du skal nå få opp et nytt vindu i nettleseren din. Her kan man se presentasjoner osv.

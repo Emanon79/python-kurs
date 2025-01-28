@@ -3,11 +3,12 @@ Pythonkurs README:
 Pythonkurset går og 2,5 dager og ganske intensivt. Av erfaring er det litt spredning i forhåndskunnskaper på elevene. Derfor vil det være endel ekstra materiale for de som vil bryne seg på vanskerligere oppgaver. For å løse ekstra oppgavene vil man ofte måtte søke informasjon selv på internett. 
 Vi har ikke løsningsforslag for ekstra oppgavene.
 
-Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt. 
+Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt.
+
+Man kan gjerne bruke VSCode til å kjøre presentasjonene eller i Jupyter lab. VsCode har en Jupyter extension som fungerer bra med Jupyter Notebooks.
 
 Presentasjoner ligger i presentasjoner/
 - Disse presentasjonene er "notebooks" for Jupyter lab som skal brukes i kurset.
-- Kan også se presentasjonene i html-form (I disse kan ikke kodesnippets kjøres) i presentasjoner/html hvis man ikke vil se de i Jupyter
 - Oppgaver finner man underveis i presentasjonene/
 
 Løsningsforslag ligger i løsningsforslag/

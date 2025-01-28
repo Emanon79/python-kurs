@@ -5,7 +5,7 @@ Vi har ikke løsningsforslag for ekstra oppgavene.
 
 Vi kommer til å gå igjennom presentasjonene i fellesskap, og oppgavene gjøres individuelt.
 
-Man kan gjerne bruke VSCode til å kjøre presentasjonene eller i Jupyter lab. VsCode har en Jupyter extension som fungerer bra med Jupyter Notebooks.
+Bruk gjerne VSCode til å kjøre presentasjonene, du kan også bruke Jupyter lab. VsCode har en Jupyter extension som fungerer bra med Jupyter Notebooks.
 
 Presentasjoner ligger i presentasjoner/
 - Disse presentasjonene er "notebooks" for Jupyter lab som skal brukes i kurset.
@@ -17,7 +17,7 @@ Løsningsforslag ligger i løsningsforslag/
 
 Nyttige script som blir brukt underveis i scriptet ligger i mappa script/
 
-Kurset kan klones med git hvis du har git installert 
+Kurset kan klones med git hvis du har git installert
 git clone git@github.com:Emanon79/python-kurs.git
 Eller lastes ned som zip
 https://github.com/Emanon79/python-kurs/archive/refs/heads/main.zip

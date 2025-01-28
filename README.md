@@ -64,17 +64,14 @@ Her kan man kjøre snippets med kode og få resultater tilbake.
 Vi kommer til å bruke dette i kurset, og alle presentasjoner er notebooks!
 ```bash
 pip install jupyterlab (Hvis ikke allerede installert i forrige steg)
-jupyter serverextension enable --py jupyterlab --sys-prefix
 jupyter lab
 ```
 Hvis dette ikke fungerer, bytt ut "jupyter" med `python3 -m jupyter`
 ```bash
-python3 -m jupyter serverextension enable --py jupyterlab --sys-prefix
 python3 -m jupyter lab
 ```
 evt. med py launcher for Windows:
 ```bash
-py -m jupyter serverextension enable --py jupyterlab --sys-prefix
 py -m jupyter lab
 ```
 

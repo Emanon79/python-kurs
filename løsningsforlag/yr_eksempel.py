@@ -3,10 +3,9 @@ from datetime import datetime
 
 def log(melding):
     try:
-        l = open('../filer/log.txt', 'a')
-        l.write(datetime.now().strftime("%d-%m-%Y-%H:%M:%S") + ": " + melding)
-        l.write('\n')
-        l.close()
+        with open('../filer/log.txt', 'a') as l:
+            l.write(datetime.now().strftime("%d-%m-%Y-%H:%M:%S") + ": " + melding)
+            l.write('\n')
     except:
         print("Feil i å skrive til log")
 

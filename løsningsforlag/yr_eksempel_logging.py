@@ -3,9 +3,12 @@ import logging
 import sys
 from datetime import datetime
 
-log_level = sys.argv[1]
+try:
+    log_level = sys.argv[1]
+except: 
+    log_level = 'INFO'
 
-logging.basicConfig(level=log_level, filename='../filer/logger.txt', filemode='a', format='%(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=log_level, filename='../filer/logger.txt', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 

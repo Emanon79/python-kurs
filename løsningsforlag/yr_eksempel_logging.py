@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-import requests
 import logging
 import argparse
-from datetime import datetime
-
+import requests
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-log-level', type=str,default='INFO',required=False, help='Log level, DEBUG, INFO, WARNING, ERROR')
@@ -14,17 +12,16 @@ logger = logging.getLogger(__name__)
 
 
 logger.info("Åpner filer for write")
-t = open('../filer/temperatur.txt', 'w')
-v = open('../filer/vind.txt', 'w') 
+t = open('../filer/temperatur.txt', 'w', encoding="utf-8")
+v = open('../filer/vind.txt', 'w', encoding="utf-8")
 
 try:
     logger.info("Skriver overskrift")
     t.write("Jørstadmoen temperatur\n")
     v.write("Jørstadmoen vind\n")
-   
-except:
-    print("Feil i å skrive til fil")
-    logger.error("Feil i å skrive til fil")
+except IOError as e:
+    print("Feil i å skrive til fil %s" ,e)
+    logger.error("Feil i å skrive til fil  %s" ,e)
 
 logger.info("Henter vær fra YR API")
 headers = {'Accept': 'application/json'}
@@ -48,14 +45,14 @@ for time in data['properties']['timeseries']:
         v.write(f"Tid: {time['time']}\n")
         v.write(f"Vindhastighet: {time['data']['instant']['details']['wind_speed']} m/s\n")
 
-    except:
+    except IOError as e:
         print("Feil i å appende til fil")
+        logger.error("Feil i å appende fil %s" ,e)
+
 try:    
     logger.info("Lukker filer")
     t.close()
     v.close()
-except:
+except IOError as e:
     print("Feil i å lukke fil")
-    logger.error("Feil i å lukke fil")
-
-
+    logger.error("Feil i å lukke fil %s" ,e)

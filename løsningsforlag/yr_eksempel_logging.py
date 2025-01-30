@@ -1,14 +1,15 @@
+#!/usr/bin/env python3
 import requests
 import logging
-import sys
+import argparse
 from datetime import datetime
 
-try:
-    log_level = sys.argv[1]
-except: 
-    log_level = 'INFO'
 
-logging.basicConfig(level=log_level, filename='../filer/logger.txt', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
+parser = argparse.ArgumentParser()
+parser.add_argument('-log-level', type=str,default='INFO',required=False, help='Log level, DEBUG, INFO, WARNING, ERROR')
+args = parser.parse_args()
+
+logging.basicConfig(level=args.log_level, filename='../filer/logger.txt', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
